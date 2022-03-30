@@ -6,9 +6,9 @@ language = "en"
 multilingual = false
 
 [output.html]
-git-repository-url = "https://github.com/rancher-sandbox/lockc"
+git-repository-url = "https://github.com/lockc-project/lockc"
 git-repository-icon = "fa-github"
-site-url = "/lockc/"
+site-url = "/book/"
 
 [rust]
 edition = "2018"

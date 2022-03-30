@@ -149,7 +149,7 @@ Then we need to go to the lockc-helm-charts git repository:
 ```bash
 # Go to the main directory of lockc-helm-charts sources
 cd ../lockc-helm-charts
-kubectl apply -f https://rancher-sandbox.github.io/lockc-helm-charts/namespace.yaml
+kubectl apply -f https://lockc-project.github.io/helm-charts/namespace.yaml
 helm install lockc charts/lockc/ --namespace lockc \
     --set lockcd.image.repository=ttl.sh/${IMAGE_NAME} \
     --set lockcd.image.tag=30m \

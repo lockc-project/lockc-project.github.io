@@ -2,9 +2,9 @@
 
 lockc currently uses two git repositories:
 
-* **[rancher-sandbox/lockc](https://github.com/rancher-sandbox/lockc)** - the
+* **[lockc-project/lockc](https://github.com/lockc-project/lockc)** - the
   main repository containing lockc source code
-* **[rancher-sandbox/lockc-helm-charts](https://github.com/rancher-sandbox/lockc-helm-charts)** -
+* **[lockc-project/helm-charts](https://github.com/lockc-project/lockc-helm-charts)** -
   repository with Helm charts to deploy lockc on Kubernetes
 
 If you are interested in development and contributing to lockc, we recommend to

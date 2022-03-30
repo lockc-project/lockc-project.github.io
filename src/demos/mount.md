@@ -4,9 +4,9 @@
 
 The following demo shows mount policies being enforced on Kubernetes pods.
 
-YAML files can be found [here](https://github.com/rancher-sandbox/lockc/tree/main/examples/kubernetes).
+YAML files can be found [here](https://github.com/lockc-project/lockc/tree/main/examples/kubernetes).
 
-The policy violations in [deployments-should-fail.yaml](https://github.com/rancher-sandbox/lockc/tree/main/examples/kubernetes/deployments-should-fail.yaml)
+The policy violations in [deployments-should-fail.yaml](https://github.com/lockc-project/lockc/tree/main/examples/kubernetes/deployments-should-fail.yaml)
 file are:
 
 - *nginx-restricted-fail* deployment trying to make a host mount while having a
