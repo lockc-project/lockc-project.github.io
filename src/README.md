@@ -28,18 +28,18 @@ to use it is to use the source code and follow the guide.
 If you need help or want to talk with contributors, please come chat with
 us on `#lockc` channel on the [Rust Cloud Native Discord server](https://discord.gg/799cmsYB4q).
 
-You can find the source code on [GitHub](https://github.com/rancher-sandbox/lockc)
+You can find the source code on [GitHub](https://github.com/lockc-project/lockc)
 and issues and feature requests can be posted on the
-[GitHub issue tracker](https://github.com/rancher-sandbox/lockc/issues).
+[GitHub issue tracker](https://github.com/lockc-project/lockc/issues).
 **lockc** relies on the community to fix bugs and add features: if you'd like
-to contribute, please read the [CONTRIBUTING](https://github.com/rancher-sandbox/lockc/blob/master/CONTRIBUTING.md)
-guide and consider opening [pull request](https://github.com/rancher-sandbox/lockc/pulls).
+to contribute, please read the [CONTRIBUTING](https://github.com/lockc-project/lockc/blob/master/CONTRIBUTING.md)
+guide and consider opening [pull request](https://github.com/lockc-project/lockc/pulls).
 
 ## License
 
-**lockc's** userspace part is licensed under [Apache License, version 2.0](https://github.com/rancher-sandbox/lockc/blob/main/LICENSE).
+**lockc's** userspace part is licensed under [Apache License, version 2.0](https://github.com/lockc-project/lockc/blob/main/LICENSE).
 
-eBPF programs inside [lockc/src/bpf directory](https://github.com/rancher-sandbox/lockc/tree/main/lockc/src/bpf)
-are licensed under [GNU General Public License, version 2](https://github.com/rancher-sandbox/lockc/blob/main/lockc/src/bpf/LICENSE).
+eBPF programs inside [lockc/src/bpf directory](https://github.com/lockc-project/lockc/tree/main/lockc/src/bpf)
+are licensed under [GNU General Public License, version 2](https://github.com/lockc-project/lockc/blob/main/lockc/src/bpf/LICENSE).
 
 Documentation is licensed under [Mozilla Public License v2.0](https://www.mozilla.org/MPL/2.0/).
