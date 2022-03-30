@@ -1,4 +1,4 @@
-![lockc](https://lockc-project.github.io/lockc/images/logo-horizontal-lockc.png)
+![lockc](https://lockc-project.github.io/book/images/logo-horizontal-lockc.png)
 
 # Introduction
 
