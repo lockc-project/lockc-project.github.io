@@ -144,11 +144,11 @@ docker build -t ttl.sh/${IMAGE_NAME}:30m .
 docker push ttl.sh/${IMAGE_NAME}:30m
 ```
 
-Then we need to go to the lockc-helm-charts git repository:
+Then we need to go to the helm-charts git repository:
 
 ```bash
-# Go to the main directory of lockc-helm-charts sources
-cd ../lockc-helm-charts
+# Go to the main directory of helm-charts sources
+cd ../helm-charts
 kubectl apply -f https://lockc-project.github.io/helm-charts/namespace.yaml
 helm install lockc charts/lockc/ --namespace lockc \
     --set lockcd.image.repository=ttl.sh/${IMAGE_NAME} \
