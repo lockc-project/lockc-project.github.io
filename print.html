@@ -602,15 +602,15 @@ reboot.</p>
 <ul>
 <li><strong><a href="https://github.com/lockc-project/lockc">lockc-project/lockc</a></strong> - the
 main repository containing lockc source code</li>
-<li><strong><a href="https://github.com/lockc-project/lockc-helm-charts">lockc-project/helm-charts</a></strong> -
+<li><strong><a href="https://github.com/lockc-project/helm-charts">lockc-project/helm-charts</a></strong> -
 repository with Helm charts to deploy lockc on Kubernetes</li>
 </ul>
 <p>If you are interested in development and contributing to lockc, we recommend to
 fork and clone both of them. Both will be needed especially for building a
 <a href="developers/terraform/README.html">development environment based on Terraform</a>.</p>
-<p>The latter chapters assume that you have <strong>lockc</strong> and <strong>lockc-helm-charts</strong>
+<p>The latter chapters assume that you have <strong>lockc</strong> and <strong>helm-charts</strong>
 cloned in the same parent directory. For example, as
-<em>$HOME/my-repositories/lockc</em> and <em>$HOME/my-repositories/lockc-helm-charts</em>.</p>
+<em>$HOME/my-repositories/lockc</em> and <em>$HOME/my-repositories/helm-charts</em>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="building-lockc"><a class="header" href="#building-lockc">Building lockc</a></h1>
 <p>The first step to try out lockc is to build it. There are several ways to do
 that:</p>
@@ -937,9 +937,9 @@ export IMAGE_NAME=$(uuidgen)
 docker build -t ttl.sh/${IMAGE_NAME}:30m .
 docker push ttl.sh/${IMAGE_NAME}:30m
 </code></pre>
-<p>Then we need to go to the lockc-helm-charts git repository:</p>
-<pre><code class="language-bash"># Go to the main directory of lockc-helm-charts sources
-cd ../lockc-helm-charts
+<p>Then we need to go to the helm-charts git repository:</p>
+<pre><code class="language-bash"># Go to the main directory of helm-charts sources
+cd ../helm-charts
 kubectl apply -f https://lockc-project.github.io/helm-charts/namespace.yaml
 helm install lockc charts/lockc/ --namespace lockc \
     --set lockcd.image.repository=ttl.sh/${IMAGE_NAME} \
