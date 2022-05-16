@@ -15,7 +15,6 @@
 - [For Developers](developers/README.md)
     - [Repositories](developers/repositories.md)
     - [Build](developers/build/README.md)
-        - [Dapper](developers/build/dapper.md)
         - [Cargo](developers/build/cargo.md)
         - [Container image](developers/build/container-image.md)
     - [Development environment (Terraform)](developers/terraform/README.md)
