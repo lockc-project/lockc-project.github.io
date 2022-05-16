@@ -1,81 +1,48 @@
 # Cargo
 
-If you are comfortable with installing all dependencies on your host system,
-you need to install the following software:
+lockc is written entirely in Rust and uses Cargo as a build system.
 
-* LLVM
-* bpftool
-* Rust, Cargo
+## Prerequisites
 
-## LLVM
+This document assumes that you have Rust installed with
+[rustup](https://rustup.rs/).
 
-We need a recent version of LLVM (at least 12) to build BPF programs.
-
-LLVM has an official [apt repository](https://apt.llvm.org/) with recent
-stable versions.
-
-Distributions with up to date software repositories like Arch, Fedora, openSUSE
-Tumbleweed are shipping recent versions of LLVM.
-
-In more stable and not up to date distributions (CentOS, openSUSE Leap, RHEL,
-SLES), using some kind of development repository might be an option. For
-example, openSUSE Leap users can use the following devel repo:
+To build lockc, you will need Rust stable and nightly:
 
 ```bash
-zypper ar -r -p 90 https://download.opensuse.org/repositories/devel:/tools:/compiler/openSUSE_Leap_15.3/devel:tools:compiler.repo
-zypper ref
-zypper up --allow-vendor-change
-zypper in clang llvm
+rustup install stable
+rustup toolchain install nightly --component rust-src
 ```
 
-If there is no packaging of recent LLVM versions for your distribution, there
-is also an option to [download binaries](https://releases.llvm.org/download.html).
-
-## bpftool
-
-bpftool is the official CLI for interacting with BPF subsystem.
-
-Distributions with up to date software (Arch, Fedora, openSUSE Tumbleweed)
-usually provide packaging for it.
-
-Especially for more stable and less up to date distributions, but even
-generally, we would recommend to build bpftool from source. Both of
-them are the part of the Linux kernel source.
-
-bpftool is available in its own repo - [github.com/libbpf/bpftool](https://github.com/libbpf/bpftool).
-It lets you to build bpftool with the following commands:
+Then you need to install `bpf-linker` for linking eBPF programs:
 
 ```bash
-git clone --recurse-submodules https://github.com/libbpf/bpftool.git
-cd src
-make
-sudo make install prefix=/usr
+cargo install bpf-linker
 ```
 
-## Installing Rust
-
-Our recommended way of installing Rust is using **rustup**.
-[Their website](https://rustup.rs/) contains installation instruction.
-
-After installing rustup, let's install lint tools:
+By default, `bpf-linker` is trying to use the internal LLVM library available
+in Rust. That might not work if you are using musl target. In such case, you
+need to install LLVM with static libraries on your host system and then install
+`bpf-linker` with a different command:
 
 ```bash
-rustup component add clippy rustfmt
-```
-
-And then cargo-libbpf, needed for building the BPF part:
-
-```bash
-cargo install libbpf-cargo
+cargo install --git https://github.com/aya-rs/bpf-linker --tag v0.9.3 --no-default-features --features system-llvm -- bpf-linker
 ```
 
 ## Building lockc
 
 After installing all needed dependencies, it's time to build lockc.
 
-The build of the project can be done with:
+You can build and run the entire project with:
 
 ```bash
+cargo xtask run
+```
+
+If you prefer to only build the project, it be done with:
+
+```bash
+cargo xtask build-ebpf
 cargo build
 ```
 
