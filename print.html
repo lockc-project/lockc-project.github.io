@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="containers-do-not-contain.html"><strong aria-hidden="true">2.</strong> Containers do not contain</a></li><li class="chapter-item expanded "><a href="architecture.html"><strong aria-hidden="true">3.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">4.</strong> Getting started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install/index.html"><strong aria-hidden="true">4.1.</strong> Install</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install/docker.html"><strong aria-hidden="true">4.1.1.</strong> With Docker</a></li><li class="chapter-item expanded "><a href="install/kubernetes.html"><strong aria-hidden="true">4.1.2.</strong> With Kubernetes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="policies/index.html"><strong aria-hidden="true">5.</strong> Policies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="policies/file-access.html"><strong aria-hidden="true">5.1.</strong> File access</a></li><li class="chapter-item expanded "><a href="policies/mount.html"><strong aria-hidden="true">5.2.</strong> Mount</a></li><li class="chapter-item expanded "><a href="policies/syslog.html"><strong aria-hidden="true">5.3.</strong> Syslog</a></li></ol></li><li class="chapter-item expanded "><a href="tuning/index.html"><strong aria-hidden="true">6.</strong> Tuning</a></li><li class="chapter-item expanded "><a href="developers/index.html"><strong aria-hidden="true">7.</strong> For Developers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers/repositories.html"><strong aria-hidden="true">7.1.</strong> Repositories</a></li><li class="chapter-item expanded "><a href="developers/build/index.html"><strong aria-hidden="true">7.2.</strong> Build</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers/build/cargo.html"><strong aria-hidden="true">7.2.1.</strong> Cargo</a></li><li class="chapter-item expanded "><a href="developers/build/container-image.html"><strong aria-hidden="true">7.2.2.</strong> Container image</a></li></ol></li><li class="chapter-item expanded "><a href="developers/terraform/index.html"><strong aria-hidden="true">7.3.</strong> Development environment (Terraform)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers/terraform/libvirt.html"><strong aria-hidden="true">7.3.1.</strong> libvirt</a></li><li class="chapter-item expanded "><a href="developers/terraform/openstack.html"><strong aria-hidden="true">7.3.2.</strong> OpenStack</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="demos/index.html"><strong aria-hidden="true">8.</strong> Demos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="demos/mount.html"><strong aria-hidden="true">8.1.</strong> Mount</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="containers-do-not-contain.html"><strong aria-hidden="true">2.</strong> Containers do not contain</a></li><li class="chapter-item expanded "><a href="architecture.html"><strong aria-hidden="true">3.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">4.</strong> Getting started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install/index.html"><strong aria-hidden="true">4.1.</strong> Install</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install/docker.html"><strong aria-hidden="true">4.1.1.</strong> With Docker</a></li><li class="chapter-item expanded "><a href="install/kubernetes.html"><strong aria-hidden="true">4.1.2.</strong> With Kubernetes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="policies/index.html"><strong aria-hidden="true">5.</strong> Policies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="policies/file-access.html"><strong aria-hidden="true">5.1.</strong> File access</a></li><li class="chapter-item expanded "><a href="policies/mount.html"><strong aria-hidden="true">5.2.</strong> Mount</a></li><li class="chapter-item expanded "><a href="policies/syslog.html"><strong aria-hidden="true">5.3.</strong> Syslog</a></li></ol></li><li class="chapter-item expanded "><a href="tuning/index.html"><strong aria-hidden="true">6.</strong> Tuning</a></li><li class="chapter-item expanded "><a href="developers/index.html"><strong aria-hidden="true">7.</strong> For Developers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers/repositories.html"><strong aria-hidden="true">7.1.</strong> Repositories</a></li><li class="chapter-item expanded "><a href="developers/build/index.html"><strong aria-hidden="true">7.2.</strong> Build</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers/build/cargo.html"><strong aria-hidden="true">7.2.1.</strong> Cargo</a></li><li class="chapter-item expanded "><a href="developers/build/container-image.html"><strong aria-hidden="true">7.2.2.</strong> Container image</a></li></ol></li><li class="chapter-item expanded "><a href="developers/vagrant/index.html"><strong aria-hidden="true">7.3.</strong> Development environment (Vagrant)</a></li></ol></li><li class="chapter-item expanded "><a href="demos/index.html"><strong aria-hidden="true">8.</strong> Demos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="demos/mount.html"><strong aria-hidden="true">8.1.</strong> Mount</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -724,355 +724,42 @@ docker push ttl.sh/${IMAGE_NAME}:30m
 </code></pre>
 <p>After building the container image, you will be able to
 <a href="developers/build/../install/kubernetes.html">install lockc on Kubernetes</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="development-environment-terraform"><a class="header" href="#development-environment-terraform">Development environment (Terraform)</a></h1>
-<p>There is also a possibility to run lockc built from source in virtual machines.</p>
-<p>We support two virtual machine providers:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="development-environment-vagrant"><a class="header" href="#development-environment-vagrant">Development environment (Vagrant)</a></h1>
+<p>There is a possibility to run lockc build from source in a virtual machine using
+Vagrant:</p>
+<pre><code class="language-bash">vagrant up
+</code></pre>
+<p>Our <code>Vagrantfile</code> supports the following environment variables:</p>
 <ul>
-<li><strong><a href="developers/terraform/libvirt.html">libvirt</a></strong> - Configure and start VMs in libvirt environment, locally</li>
-<li><strong><a href="developers/terraform/openstack.html">OpenStack</a></strong> - Configure and start VMs in OpenStack environment, on the cloud</li>
+<li><code>LOCKC_VAGRANT_CPUS</code> - number of vCPUs</li>
+<li><code>LOCKC_VAGRANT_MEMOORY</code> - memory (in MB)</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="libvirt"><a class="header" href="#libvirt">libvirt</a></h1>
-<h2 id="configure-libvirt"><a class="header" href="#configure-libvirt">Configure libvirt</a></h2>
-<p>VMs which we are going to run are using 9p to mount the source tree. To
-ensure that those mounts are going to work correctly, open the
-<code>/etc/libvirt/qemu.conf</code> file and ensure that the following options
-are present there:</p>
-<pre><code class="language-bash">user = &quot;root&quot;
-group = &quot;root&quot;
-dynamic_ownership = 0
+<p>When VM is provisioned successfully, you can access it using:</p>
+<pre><code class="language-bash">vagrant ssh
 </code></pre>
-<p>If you had to edit the configuration, save the file and restart libvirt:</p>
-<pre><code class="language-bash">sudo systemctl restart libvirtd
+<p>That VM contains is running <a href="https://k3s.io/">k3s</a>. It's also running lockc as
+a systemd service, which can be checked with:</p>
+<pre><code class="language-bash">sudo systemctl status lockc
+sudo journalctl -fu lockc
 </code></pre>
-<h2 id="running-vms"><a class="header" href="#running-vms">Running VMs</a></h2>
-<p>Now it's time to prepare Terraform environment. Terraform files are included in
-the main lockc git repository.</p>
-<pre><code class="language-bash">cd contrib/terraform/libvirt
-cp terraform.tfvars.json.example terraform.tfvars.json
+<p>lockc source tree is available in <code>/vagrant</code> directory. After making changes in
+code, you can sync the changes (from the host):</p>
+<pre><code class="language-bash">vagrant rsync
 </code></pre>
-<p>After that, open the <code>terraform.tfvars.json</code> file with your favorite text
-editor. The only setting which you really need to change is
-<code>authorized_keys</code>. Please paste your public SSH key there. Otherwise,
-connecting to VMs with SSH will be impossible.</p>
-<p>By default, the <code>enable_k8s_containerd</code> option is <code>true</code> which means that
-Kubernetes cluster with CRI containerd is going to be deployed on VMs.</p>
-<p>If you want to rather use lockc with Docker as a local container engine, set
-<code>enable_k8s_containerd</code> to <code>false</code> and set <code>enable_docker</code> to <code>true</code>. In that
-case, it also makes sense to set <code>control_planes</code> to <code>1</code> and <code>workers</code> to <code>0</code>,
-since one VM is enough for non-clusterized Docker.</p>
-<p>Other customization available through <code>terraform.tfvars.json</code> are explained
-further in this document.</p>
-<p>After setting the options, initialize the environment with:</p>
-<pre><code class="language-bash">terraform init
+<p>Then build, install and restart lockc in VM (inside <code>vagrant ssh</code> session):</p>
+<pre><code class="language-bash">sudo systemctl stop lockc
+cargo xtask build-ebpf
+cargo build
+cargo xtask install
+sudo systemctl start lockc
 </code></pre>
-<p>And then start the VMs:</p>
-<pre><code class="language-bash">terraform apply
-</code></pre>
-<p>Terraform finished successfully, you should see the output with IP
-addresses of virtual machines, like:</p>
-<pre><code class="language-bash">Apply complete! Resources: 31 added, 0 changed, 0 destroyed.
-
-Outputs:
-
-ip_control_planes = {
-  &quot;lockc-control-plane-0&quot; = tolist([
-    &quot;10.16.0.113&quot;,
-  ])
-  &quot;lockc-control-plane-1&quot; = tolist([
-    &quot;10.16.0.137&quot;,
-  ])
-}
-ip_workers = {
-  &quot;lockc-worker-0&quot; = tolist([
-    &quot;10.16.0.174&quot;,
-  ])
-  &quot;lockc-worker-1&quot; = tolist([
-    &quot;10.16.0.44&quot;,
-  ])
-}
-
-</code></pre>
-<p>You can simply ssh to them using the <code>opensuse</code> user:</p>
-<pre><code class="language-bash">ssh opensuse@10.16.0.255
-</code></pre>
-<h2 id="kubernetes"><a class="header" href="#kubernetes">Kubernetes</a></h2>
-<p>If you chose to deploy Kubernetes, there will be the <code>admin.conf</code> file
-available after successful run of terraform. You can use it by doing:</p>
-<pre><code class="language-bash">export KUBECONFIG=$(pwd)/admin.conf
-</code></pre>
-<p>Then we can check whether Kubernetes is running properly:</p>
-<pre><code class="language-bash">$ kubectl get nodes
-NAME                    STATUS   ROLES                  AGE   VERSION
-lockc-control-plane-0   Ready    control-plane,master   15m   v1.22.3
-lockc-control-plane-1   Ready    control-plane,master   14m   v1.22.3
-lockc-worker-0          Ready    &lt;none&gt;                 13m   v1.22.3
-lockc-worker-1          Ready    &lt;none&gt;                 13m   v1.22.3
-$ kubectl get pods -A
-NAMESPACE     NAME                                            READY   STATUS    RESTARTS      AGE
-kube-system   cilium-6s8m6                                    1/1     Running   0             14m
-kube-system   cilium-nnrvx                                    1/1     Running   0             14m
-kube-system   cilium-operator-5986db558f-kj9w5                1/1     Running   0             15m
-kube-system   cilium-operator-5986db558f-xddgx                1/1     Running   1 (14m ago)   15m
-kube-system   cilium-tms8r                                    1/1     Running   1 (14m ago)   15m
-kube-system   cilium-x5rtz                                    1/1     Running   0             14m
-kube-system   coredns-78fcd69978-cppjl                        1/1     Running   0             14m
-kube-system   coredns-78fcd69978-rn58p                        1/1     Running   0             14m
-kube-system   etcd-lockc-control-plane-0                      1/1     Running   0             15m
-kube-system   etcd-lockc-control-plane-1                      1/1     Running   0             14m
-kube-system   kube-apiserver-lockc-control-plane-0            1/1     Running   0             15m
-kube-system   kube-apiserver-lockc-control-plane-1            1/1     Running   0             14m
-kube-system   kube-controller-manager-lockc-control-plane-0   1/1     Running   1 (14m ago)   15m
-kube-system   kube-controller-manager-lockc-control-plane-1   1/1     Running   0             14m
-kube-system   kube-proxy-42b5t                                1/1     Running   0             14m
-kube-system   kube-proxy-4stzw                                1/1     Running   0             14m
-kube-system   kube-proxy-7jtfb                                1/1     Running   0             14m
-kube-system   kube-proxy-mhrxq                                1/1     Running   0             15m
-kube-system   kube-scheduler-lockc-control-plane-0            1/1     Running   1 (14m ago)   15m
-kube-system   kube-scheduler-lockc-control-plane-1            1/1     Running   0             14m
-</code></pre>
-<p>Now it's time to build and deploy lockc!</p>
-<p>To build lockc container image, we have to go to the main directory in lockc
-git repository:</p>
-<pre><code class="language-bash"># Go to the main directory of lockc sources
-cd ../../..
-export IMAGE_NAME=$(uuidgen)
-docker build -t ttl.sh/${IMAGE_NAME}:30m .
-docker push ttl.sh/${IMAGE_NAME}:30m
-</code></pre>
-<p>Then we need to go to the helm-charts git repository:</p>
-<pre><code class="language-bash"># Go to the main directory of helm-charts sources
-cd ../helm-charts
-kubectl apply -f https://lockc-project.github.io/helm-charts/namespace.yaml
-helm install lockc charts/lockc/ --namespace lockc \
-    --set lockcd.image.repository=ttl.sh/${IMAGE_NAME} \
-    --set lockcd.image.tag=30m \
-    --set lockcd.log.level=debug
-</code></pre>
-<p>Then wait until the <code>lockcd</code> DaemonSet is ready:</p>
-<pre><code class="language-bash">$ kubectl -n lockc get ds lockcd
-NAME     DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
-lockcd   4         4         4       4            4           &lt;none&gt;          42s
-</code></pre>
-<p>You can check further whether lockc is working properly by using example
-deployments. Some of them (not violating policies) should deploy successfully.
-The other ones (violating policies) should fail.</p>
-<p>Let's start with creating namespaces which enforce particular policy levels:</p>
-<pre><code class="language-bash">$ cd examples/kubernetes
-$ kubectl apply -f namespaces.yaml 
-namespace/restricted created
-namespace/baseline created
-namespace/privileged created
-</code></pre>
-<p>Then let's deploy examples which should run successfully:</p>
-<pre><code class="language-bash">$ kubectl apply -f deployments-should-succeed.yaml 
-deployment.apps/nginx-default-success created
-deployment.apps/nginx-restricted-success created
-deployment.apps/nginx-baseline-success created
-deployment.apps/bpf-privileged-success created
-$ kubectl get pods -A | grep success
-baseline      nginx-baseline-success-8f5dd55f5-8cn9v          1/1     Running   0             17s
-default       nginx-default-success-54df89d4ff-582dz          1/1     Running   0             17s
-privileged    bpf-privileged-success-5f6b5975b6-hw6h5         1/1     Running   0             17s
-restricted    nginx-restricted-success-57b757d5df-btr2s       1/1     Running   0             17s
-</code></pre>
-<p>And then examples which should fail:</p>
-<pre><code class="language-bash">$ kubectl apply -f deployments-should-fail.yaml 
-deployment.apps/nginx-restricted-fail created
-deployment.apps/bpf-default-fail created
-deployment.apps/bpf-restricted-fail created
-deployment.apps/bpf-baseline-fail created
-$ kubectl get pods -A | grep fail
-baseline      bpf-baseline-fail-756b89d76f-gzqzq              0/1     CrashLoopBackOff    5 (17s ago)   3m22s
-default       bpf-default-fail-7d767947c7-dvjmt               0/1     RunContainerError   5 (9s ago)    3m22s
-restricted    bpf-restricted-fail-7789944bc5-777tq            0/1     CrashLoopBackOff    5 (21s ago)   3m22s
-restricted    nginx-restricted-fail-74fb56bb7-vllkx           0/1     ContainerCreating   0             3m22s
-</code></pre>
-<p>We can dig deeper to check for the reason of failure:</p>
-<pre><code class="language-bash">$ kubectl describe pod bpf-default-fail-7d767947c7-dvjmt
-[...]
-      Message:      failed to create containerd task: failed to create shim: OCI runtime create failed: container_linux.go:380: starting container process caused: process_linux.go:545: container init caused: rootfs_linux.go:76: mounting &quot;/sys/fs/bpf&quot; to rootfs at &quot;/sys/fs/bpf&quot; caused: mount through procfd: operation not permitted: unknown
-[...]
-</code></pre>
-<p>After connecting to one of the VMs we can use bpftool to check lockc BPF
-programs:</p>
-<pre><code class="language-bash">$ ssh opensuse@10.16.0.174
-$ sudo -i
-# bpftool prog list
-[...]
-567: tracing  name sched_process_f  tag fbda76511566c0af  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 1528B  jited 869B  memlock 4096B  map_ids 108,107
-	btf_id 125
-568: lsm  name clone_audit  tag 5cca020a1dcf0cdf  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 1600B  jited 899B  memlock 4096B  map_ids 108,107
-	btf_id 125
-569: tracing  name do_exit  tag 9ebd9eeef8cdbc3a  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 488B  jited 285B  memlock 4096B  map_ids 108
-	btf_id 125
-570: lsm  name syslog_audit  tag 36b3cfb6f1722b24  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 1112B  jited 629B  memlock 4096B  map_ids 108,107
-	btf_id 125
-571: lsm  name mount_audit  tag f972bdc0b55c76aa  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 2832B  jited 1620B  memlock 4096B  map_ids 108,107,109,110
-	btf_id 125
-572: lsm  name open_audit  tag 9617c657c693030f  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 2936B  jited 1678B  memlock 4096B  map_ids 108,107,113,114,111,112
-	btf_id 125
-573: kprobe  name add_container  tag 1bb54a2bc3b00693  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 824B  jited 455B  memlock 4096B  map_ids 107,108
-	btf_id 125
-574: kprobe  name delete_containe  tag a6b9816741d0c7b3  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 1104B  jited 639B  memlock 4096B  map_ids 107,108
-	btf_id 125
-575: kprobe  name add_process  tag ec39a14f8b9b9ccf  gpl
-	loaded_at 2021-11-17T14:49:02+0000  uid 0
-	xlated 480B  jited 272B  memlock 4096B  map_ids 108
-	btf_id 125
-
-[...]
-</code></pre>
-<p>And whether it registers containers. Directories inside
-<code>/sys/fs/bpf/lockc</code> represent timestamps of lockcd launch, so it will be
-different than in the following example.</p>
-<pre><code class="language-bash"># bpftool map dump pinned /sys/fs/bpf/lockc/1637160542/map_containers 
-[{
-        &quot;key&quot;: 4257,
-        &quot;value&quot;: {
-            &quot;policy_level&quot;: &quot;POLICY_LEVEL_BASELINE&quot;
-        }
-    },{
-        &quot;key&quot;: 4780,
-        &quot;value&quot;: {
-            &quot;policy_level&quot;: &quot;POLICY_LEVEL_BASELINE&quot;
-        }
-    },{
-        &quot;key&quot;: 4664,
-        &quot;value&quot;: {
-            &quot;policy_level&quot;: &quot;POLICY_LEVEL_RESTRICTED&quot;
-        }
-    },{
-        &quot;key&quot;: 4589,
-        &quot;value&quot;: {
-            &quot;policy_level&quot;: &quot;POLICY_LEVEL_BASELINE&quot;
-        }
-    },{
-        &quot;key&quot;: 4422,
-        &quot;value&quot;: {
-            &quot;policy_level&quot;: &quot;POLICY_LEVEL_RESTRICTED&quot;
-        }
-    }
-]
-</code></pre>
-<h2 id="docker"><a class="header" href="#docker">Docker</a></h2>
-<p>Terraform output in case of Docker should look like:</p>
-<pre><code class="language-bash">Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
-
-Outputs:
-
-ip_control_planes = {
-  &quot;lockc-control-plane-0&quot; = tolist([
-    &quot;10.16.0.152&quot;,
-  ])
-}
-ip_workers = {}
-</code></pre>
-<p>We can simply ssh to the VM:</p>
-<pre><code class="language-bash">ssh opensuse@10.16.0.152
-</code></pre>
-<p>And then try to run some insecure container:</p>
-<pre><code class="language-bash">$ docker run --rm -it -v /:/rootfs registry.opensuse.org/opensuse/toolbox:latest bash
-docker: Error response from daemon: OCI runtime create failed: container_linux.go:380: starting container process caused: process_linux.go:545: container init caused: rootfs_linux.go:76: mounting &quot;/&quot; to rootfs at &quot;/rootfs&quot; caused: mount through procfd: operation not permitted: unknown.
-</code></pre>
-<p>lockc should prevent that container from running. However, running such
-container as root with <code>privileged</code> policy level should be fine:</p>
-<pre><code class="language-bash">$ sudo -i
-# docker run --label org.lockc.policy=privileged --rm -it -v /:/rootfs registry.opensuse.org/opensuse/toolbox:latest bash
-8ea310609fce:/ # 
-</code></pre>
-<h2 id="variables"><a class="header" href="#variables">Variables</a></h2>
-<p>Variables available in <code>terraform.tfvars.json</code> are:</p>
-<ul>
-<li><code>libvirt_uri</code> - libvirt connection URI</li>
-<li><code>pool</code> - pool to be used to store all the volumes</li>
-<li><code>image_name</code> - image name in libvirt</li>
-<li><code>image_path</code> - path or URL to the image</li>
-<li><code>network_name</code> - network name in libvirt</li>
-<li><code>network_mode</code> - network mode in libvirt (<code>nat</code> / <code>none</code> / <code>route</code> / <code>bridge</code>)</li>
-<li><code>dns_domain</code> - DNS domain name</li>
-<li><code>stack_name</code> - identifier to make all your resources unique and avoid clashes with other users of this terraform project</li>
-<li><code>network_cidr</code> - network CIDR</li>
-<li><code>locale</code> - system locales to set onm all the nodes</li>
-<li><code>timezone</code> - timezone to set on all the nodes</li>
-<li><code>authorized_keys</code> - SSH keys to inject into all the nodes</li>
-<li><code>repositories</code> - zypper repositories to add</li>
-<li><code>packages</code> - list of additional packages to install#</li>
-<li><code>enable_docker</code> - enable Docker support (as a non-clustered container engine</li>
-<li><code>enable_k8s_containerd</code> - enable Kubernetes with containerd CRI</li>
-<li><code>username</code> - default user in VMs</li>
-<li><code>control_planes</code> - number of control plane VMs to create</li>
-<li><code>control_plane_memory</code> - the amount of RAM (MB) for a control plane node</li>
-<li><code>control_plane_vcpu</code> - the amount of virtual CPUs for a control plane node</li>
-<li><code>control_plane_disk_size</code> - disk size (in bytes)</li>
-<li><code>workers</code> - number of worker VMs to create</li>
-<li><code>worker_memory</code> - the amount of RAM (MB) for a worker node</li>
-<li><code>worker_vcpu</code> - the amount of virtual CPUs for a worker node</li>
-<li><code>worker_disk_size</code> - disk size (in bytes)</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="openstack"><a class="header" href="#openstack">OpenStack</a></h1>
-<h2 id="introduction-1"><a class="header" href="#introduction-1">Introduction</a></h2>
-<p>These terraform definitions are going to create the whole
-cluster on top of openstack.</p>
-<h2 id="deployment"><a class="header" href="#deployment">Deployment</a></h2>
-<p>Make sure to download an openrc file from your OpenStack instance, e.g.:</p>
-<p><code>https://engcloud.prv.suse.net/project/api_access/openrc/</code></p>
-<p>and source it:</p>
-<pre><code class="language-sh">source container-openrc.sh
-</code></pre>
-<p>Also make sure to have your ssh key within OpenStack, by adding your key to the
-key_pairs first.</p>
-<p>Upload <code>lockc</code> base image build with guestfs.</p>
-<pre><code class="language-sh">openstack image create lockc-`date +%F` --disk-format qcow2 --file ./lockc-base.qcow2
-</code></pre>
-<p>Once you perform a <a href="developers/terraform/openstack.html#Customization">Customization</a> you can use <code>terraform</code> to deploy the cluster:</p>
-<pre><code class="language-sh">terraform init
-terraform validate
-terraform apply
-</code></pre>
-<h2 id="machine-access"><a class="header" href="#machine-access">Machine access</a></h2>
-<p>It is important to have your public ssh key within the <code>authorized_keys</code>,
-this is done by <code>cloud-init</code> through a terraform variable called <code>authorized_keys</code>.</p>
-<p>All the instances have a <code>root</code> and <code>opensuse</code> user. The normal 'opensuse' user user can
-perform <code>sudo</code> without specifying a password.</p>
-<p>Neither root nor the normal <code>opensuse</code> user will have password. Terraform
-is using SSH key-based authentication. You can always set a password after the
-creation of the machines using <code>sudo passwd opensuse</code> (for normal user) or <code>sudo passwd</code> (for root).</p>
-<h2 id="load-balancer"><a class="header" href="#load-balancer">Load balancer</a></h2>
-<p>The kubernetes api-server instances running inside of the cluster are
-exposed by a load balancer managed by OpenStack.</p>
-<h2 id="customization"><a class="header" href="#customization">Customization</a></h2>
-<p>Copy the <code>terraform.tfvars.example</code> to <code>terraform.tfvars</code> and
-provide reasonable values.</p>
-<h2 id="variables-1"><a class="header" href="#variables-1">Variables</a></h2>
-<p><code>image_name</code> - Name of the image to use<br />
-<code>internal_net</code> - Name of the internal network to be created<br />
-<code>stack_name</code> - Identifier to make all your resources unique and avoid clashes with other users of this terraform project<br />
-<code>authorized_keys</code> - A list of ssh public keys that will be installed on all nodes<br />
-<code>repositories</code> - Additional repositories that will be added on all nodes<br />
-<code>packages</code> - Additional packages that will be installed on all nodes\</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="demos"><a class="header" href="#demos">Demos</a></h1>
 <p>This section of the book contains demos.</p>
 <ul>
 <li><a href="demos/mount.html">Mount</a> - mount policies</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mount-policies-1"><a class="header" href="#mount-policies-1">Mount policies</a></h1>
-<h2 id="kubernetes-1"><a class="header" href="#kubernetes-1">Kubernetes</a></h2>
+<h2 id="kubernetes"><a class="header" href="#kubernetes">Kubernetes</a></h2>
 <p>The following demo shows mount policies being enforced on Kubernetes pods.</p>
 <p>YAML files can be found <a href="https://github.com/lockc-project/lockc/tree/main/examples/kubernetes">here</a>.</p>
 <p>The policy violations in <a href="https://github.com/lockc-project/lockc/tree/main/examples/kubernetes/deployments-should-fail.yaml">deployments-should-fail.yaml</a>

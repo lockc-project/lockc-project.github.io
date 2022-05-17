@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Development environment (Terraform) - lockc Documentation</title>
+        <title>Development environment (Vagrant) - lockc Documentation</title>
 
 
         <!-- Custom HTML head -->
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../containers-do-not-contain.html"><strong aria-hidden="true">2.</strong> Containers do not contain</a></li><li class="chapter-item expanded "><a href="../../architecture.html"><strong aria-hidden="true">3.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="../../configuration.html"><strong aria-hidden="true">4.</strong> Getting started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../install/index.html"><strong aria-hidden="true">4.1.</strong> Install</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../install/docker.html"><strong aria-hidden="true">4.1.1.</strong> With Docker</a></li><li class="chapter-item expanded "><a href="../../install/kubernetes.html"><strong aria-hidden="true">4.1.2.</strong> With Kubernetes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../policies/index.html"><strong aria-hidden="true">5.</strong> Policies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../policies/file-access.html"><strong aria-hidden="true">5.1.</strong> File access</a></li><li class="chapter-item expanded "><a href="../../policies/mount.html"><strong aria-hidden="true">5.2.</strong> Mount</a></li><li class="chapter-item expanded "><a href="../../policies/syslog.html"><strong aria-hidden="true">5.3.</strong> Syslog</a></li></ol></li><li class="chapter-item expanded "><a href="../../tuning/index.html"><strong aria-hidden="true">6.</strong> Tuning</a></li><li class="chapter-item expanded "><a href="../../developers/index.html"><strong aria-hidden="true">7.</strong> For Developers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../developers/repositories.html"><strong aria-hidden="true">7.1.</strong> Repositories</a></li><li class="chapter-item expanded "><a href="../../developers/build/index.html"><strong aria-hidden="true">7.2.</strong> Build</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../developers/build/cargo.html"><strong aria-hidden="true">7.2.1.</strong> Cargo</a></li><li class="chapter-item expanded "><a href="../../developers/build/container-image.html"><strong aria-hidden="true">7.2.2.</strong> Container image</a></li></ol></li><li class="chapter-item expanded "><a href="../../developers/terraform/index.html" class="active"><strong aria-hidden="true">7.3.</strong> Development environment (Terraform)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../developers/terraform/libvirt.html"><strong aria-hidden="true">7.3.1.</strong> libvirt</a></li><li class="chapter-item expanded "><a href="../../developers/terraform/openstack.html"><strong aria-hidden="true">7.3.2.</strong> OpenStack</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../demos/index.html"><strong aria-hidden="true">8.</strong> Demos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../demos/mount.html"><strong aria-hidden="true">8.1.</strong> Mount</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../containers-do-not-contain.html"><strong aria-hidden="true">2.</strong> Containers do not contain</a></li><li class="chapter-item expanded "><a href="../../architecture.html"><strong aria-hidden="true">3.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="../../configuration.html"><strong aria-hidden="true">4.</strong> Getting started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../install/index.html"><strong aria-hidden="true">4.1.</strong> Install</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../install/docker.html"><strong aria-hidden="true">4.1.1.</strong> With Docker</a></li><li class="chapter-item expanded "><a href="../../install/kubernetes.html"><strong aria-hidden="true">4.1.2.</strong> With Kubernetes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../policies/index.html"><strong aria-hidden="true">5.</strong> Policies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../policies/file-access.html"><strong aria-hidden="true">5.1.</strong> File access</a></li><li class="chapter-item expanded "><a href="../../policies/mount.html"><strong aria-hidden="true">5.2.</strong> Mount</a></li><li class="chapter-item expanded "><a href="../../policies/syslog.html"><strong aria-hidden="true">5.3.</strong> Syslog</a></li></ol></li><li class="chapter-item expanded "><a href="../../tuning/index.html"><strong aria-hidden="true">6.</strong> Tuning</a></li><li class="chapter-item expanded "><a href="../../developers/index.html"><strong aria-hidden="true">7.</strong> For Developers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../developers/repositories.html"><strong aria-hidden="true">7.1.</strong> Repositories</a></li><li class="chapter-item expanded "><a href="../../developers/build/index.html"><strong aria-hidden="true">7.2.</strong> Build</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../developers/build/cargo.html"><strong aria-hidden="true">7.2.1.</strong> Cargo</a></li><li class="chapter-item expanded "><a href="../../developers/build/container-image.html"><strong aria-hidden="true">7.2.2.</strong> Container image</a></li></ol></li><li class="chapter-item expanded "><a href="../../developers/vagrant/index.html" class="active"><strong aria-hidden="true">7.3.</strong> Development environment (Vagrant)</a></li></ol></li><li class="chapter-item expanded "><a href="../../demos/index.html"><strong aria-hidden="true">8.</strong> Demos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../demos/mount.html"><strong aria-hidden="true">8.1.</strong> Mount</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -145,13 +145,35 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="development-environment-terraform"><a class="header" href="#development-environment-terraform">Development environment (Terraform)</a></h1>
-<p>There is also a possibility to run lockc built from source in virtual machines.</p>
-<p>We support two virtual machine providers:</p>
+                        <h1 id="development-environment-vagrant"><a class="header" href="#development-environment-vagrant">Development environment (Vagrant)</a></h1>
+<p>There is a possibility to run lockc build from source in a virtual machine using
+Vagrant:</p>
+<pre><code class="language-bash">vagrant up
+</code></pre>
+<p>Our <code>Vagrantfile</code> supports the following environment variables:</p>
 <ul>
-<li><strong><a href="libvirt.html">libvirt</a></strong> - Configure and start VMs in libvirt environment, locally</li>
-<li><strong><a href="openstack.html">OpenStack</a></strong> - Configure and start VMs in OpenStack environment, on the cloud</li>
+<li><code>LOCKC_VAGRANT_CPUS</code> - number of vCPUs</li>
+<li><code>LOCKC_VAGRANT_MEMOORY</code> - memory (in MB)</li>
 </ul>
+<p>When VM is provisioned successfully, you can access it using:</p>
+<pre><code class="language-bash">vagrant ssh
+</code></pre>
+<p>That VM contains is running <a href="https://k3s.io/">k3s</a>. It's also running lockc as
+a systemd service, which can be checked with:</p>
+<pre><code class="language-bash">sudo systemctl status lockc
+sudo journalctl -fu lockc
+</code></pre>
+<p>lockc source tree is available in <code>/vagrant</code> directory. After making changes in
+code, you can sync the changes (from the host):</p>
+<pre><code class="language-bash">vagrant rsync
+</code></pre>
+<p>Then build, install and restart lockc in VM (inside <code>vagrant ssh</code> session):</p>
+<pre><code class="language-bash">sudo systemctl stop lockc
+cargo xtask build-ebpf
+cargo build
+cargo xtask install
+sudo systemctl start lockc
+</code></pre>
 
                     </main>
 
@@ -161,7 +183,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="../../developers/terraform/libvirt.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../demos/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -175,7 +197,7 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="../../developers/terraform/libvirt.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../../demos/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
